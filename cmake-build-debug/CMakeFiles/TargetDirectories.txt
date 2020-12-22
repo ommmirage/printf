@@ -1,3 +1,3 @@
-/Users/dechanel/printf/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/dechanel/printf/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir
+C:/C/printf/cmake-build-debug/CMakeFiles/printf.dir
+C:/C/printf/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/C/printf/cmake-build-debug/CMakeFiles/rebuild_cache.dir
