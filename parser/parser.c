@@ -22,7 +22,8 @@ int 	read_width(const char *line, int *ind, va_list *arg_ptr)
 	return (res);
 }
 
-int 	read_precision(const char *line, int *ind, va_list *arg_ptr)
+int 	read_precision(const char *line, int *ind, t_format *f,
+					va_list *arg_ptr)
 {
 	char	*str;
 	int 	res;
@@ -33,6 +34,7 @@ int 	read_precision(const char *line, int *ind, va_list *arg_ptr)
 	if (line[*ind] == '*')
 	{
 		(*ind)++;
+		f->flags = f->flags & (~FLAG_ZERO);
 		return (va_arg(*arg_ptr, int));
 	}
 	str = get_int_str(line, ind);
@@ -60,9 +62,9 @@ int 	get_format(t_format *f, const char *line, int *ind, va_list *arg_ptr)
 	if ((*f).width < 0)
 	{
 		(*f).flags = (*f).flags | FLAG_MINUS;
-		(*f).width = 0;
+		(*f).width *= -1;
 	}
-	(*f).precision = read_precision(line, ind, arg_ptr);
+	(*f).precision = read_precision(line, ind, f, arg_ptr);
 	(*f).type = read_type(line, ind);
 	return (1);
 }

@@ -27,6 +27,7 @@ int	ft_printf(const char *line, ...)
 
 	va_start(arg_ptr, line);
 	write_before_percent(line, &len, &ind);
+	ft_bzero(&f, sizeof (f));
 	if (!get_format(&f, line, &ind, &arg_ptr))
 	{
 		va_end(arg_ptr);

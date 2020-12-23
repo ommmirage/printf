@@ -11,7 +11,7 @@ void	print_zeroes(t_format f, int arg)
 	int len;
 
 	len = int_len(arg);
-	if (f.flags & FLAG_ZERO)
+	if ((f.flags & FLAG_ZERO) && f.precision > -1)
 		while (len < f.width)
 		{
 			write(1, "0", 1);

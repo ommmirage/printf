@@ -4,17 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/C/printf/libft/ft_atoi.c" "C:/C/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_atoi.c.obj"
-  "C:/C/printf/libft/ft_isdigit.c" "C:/C/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_isdigit.c.obj"
-  "C:/C/printf/libft/ft_isspace_bonus.c" "C:/C/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_isspace_bonus.c.obj"
-  "C:/C/printf/main.c" "C:/C/printf/cmake-build-debug/CMakeFiles/printf.dir/main.c.obj"
-  "C:/C/printf/parser/flags.c" "C:/C/printf/cmake-build-debug/CMakeFiles/printf.dir/parser/flags.c.obj"
-  "C:/C/printf/parser/parser.c" "C:/C/printf/cmake-build-debug/CMakeFiles/printf.dir/parser/parser.c.obj"
-  "C:/C/printf/printf.c" "C:/C/printf/cmake-build-debug/CMakeFiles/printf.dir/printf.c.obj"
-  "C:/C/printf/processor/process.c" "C:/C/printf/cmake-build-debug/CMakeFiles/printf.dir/processor/process.c.obj"
-  "C:/C/printf/utils.c" "C:/C/printf/cmake-build-debug/CMakeFiles/printf.dir/utils.c.obj"
+  "/Users/dechanel/printf/main.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/main.c.o"
+  "/Users/dechanel/printf/parser/flags.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/parser/flags.c.o"
+  "/Users/dechanel/printf/parser/parser.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/parser/parser.c.o"
+  "/Users/dechanel/printf/printf.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/printf.c.o"
+  "/Users/dechanel/printf/processor/process.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/processor/process.c.o"
+  "/Users/dechanel/printf/utils.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/utils.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
