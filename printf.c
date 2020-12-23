@@ -6,24 +6,33 @@
 #include <stdarg.h>
 #include <unistd.h>
 
-void	write_before_percent(const char *line, int *len)
+void	write_before_percent(const char *line, int *len, int *ind)
 {
 	*len = 0;
-	while (line[*len] && (line[*len] != '%'))
+	*ind = 0;
+	while (line[*ind] && (line[*ind] != '%'))
 	{
-		write(1, &line[*len], 1);
+		write(1, &line[*ind], 1);
+		(*ind)++;
 		(*len)++;
 	}
 }
 
 int	ft_printf(const char *line, ...)
 {
-	va_list arg_ptr;
-	int 	len;
+	va_list 	arg_ptr;
+	int 		len;
+	t_format	f;
+	int 		ind;
 
 	va_start(arg_ptr, line);
-	write_before_percent(line, &len);
-	parse_after_percent(line, &len, &arg_ptr);
+	write_before_percent(line, &len, &ind);
+	if (!get_format(&f, line, &ind, &arg_ptr))
+	{
+		va_end(arg_ptr);
+		return (len);
+	}
+	process(f, line, &len, &ind, &arg_ptr);
 
 	va_end(arg_ptr);
 	return (len);

@@ -3,27 +3,25 @@
 //
 
 #include "../printf.h"
-#include "parser.h"
 
-int	read_flags(const char *line, int *len, int *format_len)
+int	read_flags(const char *line, int *ind)
 {
 	int	flags;
 
-	flags = 0b00000000;
-	while (char_in_str(line[*len], FLAGS))
+	flags = FLAG_NONE;
+	while (char_in_str(line[*ind], FLAGS))
 	{
-		if (line[*len] == '-')
+		if (line[*ind] == '-')
 			flags = flags | FLAG_MINUS;
-		else if (line[*len] == '+')
+		else if (line[*ind] == '+')
 			flags = flags | FLAG_PLUS;
-		else if (line[*len] == ' ')
+		else if (line[*ind] == ' ')
 			flags = flags | FLAG_SPACE;
-		else if (line[*len] == '#')
+		else if (line[*ind] == '#')
 			flags = flags | FLAG_HASH;
-		else if (line[*len] == '0')
+		else if (line[*ind] == '0')
 			flags = flags | FLAG_ZERO;
-		(*len)++;
-		(*format_len)++;
+		(*ind)++;
 	}
 	return (flags);
 }

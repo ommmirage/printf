@@ -95,13 +95,13 @@
 		<Unit filename="C:/C/printf/parser/parser.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="C:/C/printf/parser/parser.h">
-			<Option target="printf"/>
-		</Unit>
 		<Unit filename="C:/C/printf/printf.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="C:/C/printf/printf.h">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="C:/C/printf/processor/process.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="C:/C/printf/utils.c">

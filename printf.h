@@ -13,6 +13,14 @@
 #ifndef PRINTF_H
 # define PRINTF_H
 
+# define FLAGS		"-+ #0"
+# define FLAG_NONE	0b00000000
+# define FLAG_MINUS	0b00000001
+# define FLAG_PLUS	0b00000010
+# define FLAG_SPACE	0b00000100
+# define FLAG_HASH	0b00001000
+# define FLAG_ZERO	0b00010000
+
 # include "libft/libft.h"
 
 typedef struct	s_format{
@@ -20,12 +28,14 @@ typedef struct	s_format{
 	int		width;
 	int 	precision;
 	char	type;
-	int 	format_len;
 }				t_format;
 
 int		ft_printf(const char *line, ...);
 int 	char_in_str(char c, const char *str);
-void	parse_after_percent(const char *line, int *len, va_list *arg_ptr);
-char	*get_int_str(const char *line, int *len, int *format_len);
+int		read_flags(const char *line, int *ind);
+int 	get_format(t_format *f, const char *line, int *ind, va_list *arg_ptr);
+char	*get_int_str(const char *line, int *ind);
+void	process(t_format f, const char *line, int *len, int *ind, va_list *arg_ptr);
+int		int_len(int num);
 
 #endif

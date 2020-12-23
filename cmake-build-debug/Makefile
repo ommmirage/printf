@@ -331,6 +331,33 @@ printf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\printf.dir\build.make CMakeFiles/printf.dir/printf.c.s
 .PHONY : printf.c.s
 
+processor/process.obj: processor/process.c.obj
+
+.PHONY : processor/process.obj
+
+# target to build an object file
+processor/process.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\printf.dir\build.make CMakeFiles/printf.dir/processor/process.c.obj
+.PHONY : processor/process.c.obj
+
+processor/process.i: processor/process.c.i
+
+.PHONY : processor/process.i
+
+# target to preprocess a source file
+processor/process.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\printf.dir\build.make CMakeFiles/printf.dir/processor/process.c.i
+.PHONY : processor/process.c.i
+
+processor/process.s: processor/process.c.s
+
+.PHONY : processor/process.s
+
+# target to generate assembly for a file
+processor/process.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\printf.dir\build.make CMakeFiles/printf.dir/processor/process.c.s
+.PHONY : processor/process.c.s
+
 utils.obj: utils.c.obj
 
 .PHONY : utils.obj
@@ -388,6 +415,9 @@ help:
 	@echo ... printf.obj
 	@echo ... printf.i
 	@echo ... printf.s
+	@echo ... processor/process.obj
+	@echo ... processor/process.i
+	@echo ... processor/process.s
 	@echo ... utils.obj
 	@echo ... utils.i
 	@echo ... utils.s

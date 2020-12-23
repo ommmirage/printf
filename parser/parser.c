@@ -3,73 +3,66 @@
 //
 
 #include "../printf.h"
-#include "parser.h"
 #include <stdlib.h>
 #include <stdarg.h>
 
-int 	read_width(const char *line, int *len, int *format_len, va_list *arg_ptr)
+int 	read_width(const char *line, int *ind, va_list *arg_ptr)
 {
 	char	*str;
 	int 	res;
 
-	if (line[*len] == '*')
+	if (line[*ind] == '*')
 	{
-		(*len)++;
-		(*format_len)++;
+		(*ind)++;
 		return (va_arg(*arg_ptr, int));
 	}
-	str = get_int_str(line, len, format_len);
+	str = get_int_str(line, ind);
 	res = ft_atoi(str);
 	free(str);
 	return (res);
 }
 
-int 	read_precision(const char *line, int *len, int *format_len, va_list *arg_ptr)
+int 	read_precision(const char *line, int *ind, va_list *arg_ptr)
 {
 	char	*str;
 	int 	res;
 
-	if (line[*len] != '.')
+	if (line[*ind] != '.')
 		return (-1);
-	(*len)++;
-	(*format_len)++;
-	if (line[*len] == '*')
+	(*ind)++;
+	if (line[*ind] == '*')
 	{
-		(*len)++;
-		(*format_len)++;
+		(*ind)++;
 		return (va_arg(*arg_ptr, int));
 	}
-	str = get_int_str(line, len, format_len);
+	str = get_int_str(line, ind);
 	res = ft_atoi(str);
 	free(str);
 	return (res);
 }
 
-char 	read_type(const char *line, int *len, int *format_len)
+char 	read_type(const char *line, int *ind)
 {
 	char	type;
 
-	type = line[*len];
-	(*len)++;
-	(*format_len)++;
+	type = line[*ind];
+	(*ind)++;
 	return (type);
 }
 
-void	parse_after_percent(const char *line, int *len, va_list *arg_ptr)
+int 	get_format(t_format *f, const char *line, int *ind, va_list *arg_ptr)
 {
-	t_format	f;
-
-	if (line[*len] != '%')
-		return ;
-	(*len)++;
-	f.format_len = 1;
-	f.flags = read_flags(line, len, &f.format_len);
-	f.width = read_width(line, len, &f.format_len, arg_ptr);
-	if (f.width < 0)
+	if (line[*ind] != '%')
+		return (0);
+	(*ind)++;
+	(*f).flags = read_flags(line, ind);
+	(*f).width = read_width(line, ind, arg_ptr);
+	if ((*f).width < 0)
 	{
-		f.flags = f.flags | FLAG_MINUS;
-		f.width = 0;
+		(*f).flags = (*f).flags | FLAG_MINUS;
+		(*f).width = 0;
 	}
-	f.precision = read_precision(line, len, &f.format_len, arg_ptr);
-	f.type = read_type(line, len, &f.format_len);
+	(*f).precision = read_precision(line, ind, arg_ptr);
+	(*f).type = read_type(line, ind);
+	return (1);
 }

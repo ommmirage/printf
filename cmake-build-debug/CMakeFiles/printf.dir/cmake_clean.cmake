@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/parser/flags.c.obj"
   "CMakeFiles/printf.dir/parser/parser.c.obj"
   "CMakeFiles/printf.dir/printf.c.obj"
+  "CMakeFiles/printf.dir/processor/process.c.obj"
   "CMakeFiles/printf.dir/utils.c.obj"
   "libprintf.dll.a"
   "printf.exe"

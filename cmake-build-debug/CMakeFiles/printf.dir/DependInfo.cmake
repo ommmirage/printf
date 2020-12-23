@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/C/printf/parser/flags.c" "C:/C/printf/cmake-build-debug/CMakeFiles/printf.dir/parser/flags.c.obj"
   "C:/C/printf/parser/parser.c" "C:/C/printf/cmake-build-debug/CMakeFiles/printf.dir/parser/parser.c.obj"
   "C:/C/printf/printf.c" "C:/C/printf/cmake-build-debug/CMakeFiles/printf.dir/printf.c.obj"
+  "C:/C/printf/processor/process.c" "C:/C/printf/cmake-build-debug/CMakeFiles/printf.dir/processor/process.c.obj"
   "C:/C/printf/utils.c" "C:/C/printf/cmake-build-debug/CMakeFiles/printf.dir/utils.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

@@ -16,26 +16,39 @@ int char_in_str(char c, const char *str)
 	return (0);
 }
 
-char	*get_int_str(const char *line, int *len, int *format_len)
+char	*get_int_str(const char *line, int *ind)
 {
 	int 	i;
 	char	*str;
 
 	str = malloc(12);
 	i = 0;
-	if (line[*len] == '-')
+	if (line[*ind] == '-')
 	{
 		str[i++] = '-';
-		(*len)++;
-		(*format_len)++;
+		(*ind)++;
 	}
-	while (ft_isdigit(line[*len]))
+	while (ft_isdigit(line[*ind]))
 	{
-		str[i] = line[*len];
+		str[i] = line[*ind];
 		i++;
-		(*len)++;
-		(*format_len)++;
+		(*ind)++;
 	}
 	str[i] = 0;
 	return (str);
+}
+
+int		int_len(int num)
+{
+	int len;
+
+	len = 0;
+	if (num < 0)
+		len++;
+	while (num / 10 != 0)
+	{
+		len++;
+		num /= 10;
+	}
+	return (len);
 }

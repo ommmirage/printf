@@ -14,17 +14,19 @@ CMakeFiles/printf.dir/main.c.obj: ../printf.h
 
 CMakeFiles/printf.dir/parser/flags.c.obj: ../libft/libft.h
 CMakeFiles/printf.dir/parser/flags.c.obj: ../parser/flags.c
-CMakeFiles/printf.dir/parser/flags.c.obj: ../parser/parser.h
 CMakeFiles/printf.dir/parser/flags.c.obj: ../printf.h
 
 CMakeFiles/printf.dir/parser/parser.c.obj: ../libft/libft.h
 CMakeFiles/printf.dir/parser/parser.c.obj: ../parser/parser.c
-CMakeFiles/printf.dir/parser/parser.c.obj: ../parser/parser.h
 CMakeFiles/printf.dir/parser/parser.c.obj: ../printf.h
 
 CMakeFiles/printf.dir/printf.c.obj: ../libft/libft.h
 CMakeFiles/printf.dir/printf.c.obj: ../printf.c
 CMakeFiles/printf.dir/printf.c.obj: ../printf.h
+
+CMakeFiles/printf.dir/processor/process.c.obj: ../libft/libft.h
+CMakeFiles/printf.dir/processor/process.c.obj: ../printf.h
+CMakeFiles/printf.dir/processor/process.c.obj: ../processor/process.c
 
 CMakeFiles/printf.dir/utils.c.obj: ../libft/libft.h
 CMakeFiles/printf.dir/utils.c.obj: ../printf.h
