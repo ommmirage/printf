@@ -10,13 +10,11 @@
 stdio.h
 -
 
-/Users/dechanel/printf/parser/parser.c
-../printf.h
+/Users/dechanel/printf/main.c
+stdio.h
+-
+printf.h
 /Users/dechanel/printf/printf.h
-stdlib.h
--
-stdarg.h
--
 
 /Users/dechanel/printf/printf.h
 libft/libft.h

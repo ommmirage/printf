@@ -6,23 +6,33 @@
 #include <stdarg.h>
 #include <unistd.h>
 
-void	print_zeroes(t_format f, int arg)
+void	flag_zeroes(t_format f, int len)
 {
-	int len;
-
-	len = int_len(arg);
-	if ((f.flags & FLAG_ZERO) && f.precision > -1)
+	if (f.flags & FLAG_ZERO)
 		while (len < f.width)
 		{
 			write(1, "0", 1);
-			f.width--;
+			len++;
 		}
 }
 
-void	di(t_format f, int arg)
+void	precision_zeroes(int precision, int len)
 {
-	print_zeroes(f, arg);
+	while (precision > len)
+	{
+		write(1, "0", 1);
+		len++;
+	}
+}
 
+void	di(t_format f, int num)
+{
+	int len;
+
+	len = int_len(num);
+	flag_zeroes(f, len);
+	precision_zeroes(f.precision, len);
+	write(1, ft_itoa(num), len);
 }
 
 void	process(t_format f, const char *line, int *len, int *ind, va_list *arg_ptr)

@@ -3,7 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/parser/flags.c.o"
   "CMakeFiles/printf.dir/parser/parser.c.o"
   "CMakeFiles/printf.dir/printf.c.o"
-  "CMakeFiles/printf.dir/processor/process.c.o"
+  "CMakeFiles/printf.dir/processor/processor.c.o"
   "CMakeFiles/printf.dir/utils.c.o"
   "printf"
   "printf.pdb"

@@ -142,18 +142,18 @@ CMakeFiles/printf.dir/parser/flags.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/parser/flags.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dechanel/printf/parser/flags.c -o CMakeFiles/printf.dir/parser/flags.c.s
 
-CMakeFiles/printf.dir/processor/process.c.o: CMakeFiles/printf.dir/flags.make
-CMakeFiles/printf.dir/processor/process.c.o: ../processor/process.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dechanel/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/printf.dir/processor/process.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/processor/process.c.o   -c /Users/dechanel/printf/processor/process.c
+CMakeFiles/printf.dir/processor/processor.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/processor/processor.c.o: ../processor/processor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dechanel/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/printf.dir/processor/processor.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/processor/processor.c.o   -c /Users/dechanel/printf/processor/processor.c
 
-CMakeFiles/printf.dir/processor/process.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/processor/process.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dechanel/printf/processor/process.c > CMakeFiles/printf.dir/processor/process.c.i
+CMakeFiles/printf.dir/processor/processor.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/processor/processor.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dechanel/printf/processor/processor.c > CMakeFiles/printf.dir/processor/processor.c.i
 
-CMakeFiles/printf.dir/processor/process.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/processor/process.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dechanel/printf/processor/process.c -o CMakeFiles/printf.dir/processor/process.c.s
+CMakeFiles/printf.dir/processor/processor.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/processor/processor.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dechanel/printf/processor/processor.c -o CMakeFiles/printf.dir/processor/processor.c.s
 
 # Object files for target printf
 printf_OBJECTS = \
@@ -162,7 +162,7 @@ printf_OBJECTS = \
 "CMakeFiles/printf.dir/utils.c.o" \
 "CMakeFiles/printf.dir/parser/parser.c.o" \
 "CMakeFiles/printf.dir/parser/flags.c.o" \
-"CMakeFiles/printf.dir/processor/process.c.o"
+"CMakeFiles/printf.dir/processor/processor.c.o"
 
 # External object files for target printf
 printf_EXTERNAL_OBJECTS =
@@ -172,7 +172,7 @@ printf: CMakeFiles/printf.dir/printf.c.o
 printf: CMakeFiles/printf.dir/utils.c.o
 printf: CMakeFiles/printf.dir/parser/parser.c.o
 printf: CMakeFiles/printf.dir/parser/flags.c.o
-printf: CMakeFiles/printf.dir/processor/process.c.o
+printf: CMakeFiles/printf.dir/processor/processor.c.o
 printf: CMakeFiles/printf.dir/build.make
 printf: ../libft/libft.a
 printf: CMakeFiles/printf.dir/link.txt
