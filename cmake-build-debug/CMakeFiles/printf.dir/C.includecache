@@ -10,6 +10,32 @@
 stdio.h
 -
 
+/Users/dechanel/printf/main.c
+stdio.h
+-
+printf.h
+/Users/dechanel/printf/printf.h
+
+/Users/dechanel/printf/parser/flags.c
+../printf.h
+/Users/dechanel/printf/printf.h
+
+/Users/dechanel/printf/parser/parser.c
+../printf.h
+/Users/dechanel/printf/printf.h
+stdlib.h
+-
+stdarg.h
+-
+
+/Users/dechanel/printf/printf.c
+printf.h
+/Users/dechanel/printf/printf.h
+stdarg.h
+-
+unistd.h
+-
+
 /Users/dechanel/printf/printf.h
 libft/libft.h
 /Users/dechanel/printf/libft/libft.h
@@ -21,4 +47,10 @@ stdarg.h
 -
 unistd.h
 -
+
+/Users/dechanel/printf/utils.c
+stdlib.h
+-
+printf.h
+/Users/dechanel/printf/printf.h
 
