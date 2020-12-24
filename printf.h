@@ -35,7 +35,7 @@ int 	char_in_str(char c, const char *str);
 int		read_flags(const char *line, int *ind);
 int 	get_format(t_format *f, const char *line, int *ind, va_list *arg_ptr);
 char	*get_int_str(const char *line, int *ind);
-void	process(t_format f, const char *line, int *len, int *ind, va_list *arg_ptr);
+void	process(t_format f, va_list *arg_ptr);
 int		int_len(int num);
 
 #endif

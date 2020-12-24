@@ -10,13 +10,15 @@
 stdio.h
 -
 
-/Users/dechanel/printf/main.c
-stdio.h
--
-printf.h
-/Users/dechanel/printf/printf.h
-
 /Users/dechanel/printf/printf.h
 libft/libft.h
 /Users/dechanel/printf/libft/libft.h
+
+/Users/dechanel/printf/processor/processor.c
+../printf.h
+/Users/dechanel/printf/printf.h
+stdarg.h
+-
+unistd.h
+-
 

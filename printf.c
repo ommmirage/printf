@@ -33,7 +33,7 @@ int	ft_printf(const char *line, ...)
 		va_end(arg_ptr);
 		return (len);
 	}
-	process(f, line, &len, &ind, &arg_ptr);
+	process(f, &arg_ptr);
 
 	va_end(arg_ptr);
 	return (len);

@@ -45,7 +45,7 @@ int		int_len(int num)
 	len = 0;
 	if (num < 0)
 		len++;
-	while (num / 10 != 0)
+	while (num != 0)
 	{
 		len++;
 		num /= 10;
