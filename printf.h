@@ -32,9 +32,9 @@ typedef struct	s_format{
 
 int		ft_printf(const char *line, ...);
 int 	char_in_str(char c, const char *str);
-int		read_flags(const char *line, int *ind);
-int 	get_format(t_format *f, const char *line, int *ind, va_list *arg_ptr);
-char	*get_int_str(const char *line, int *ind);
+int		read_flags(const char **line);
+int 	get_format(t_format *f, const char **line, va_list *arg_ptr);
+char	*get_int_str(const char **line);
 void	process(t_format f, va_list *arg_ptr);
 int		int_len(int num);
 

@@ -6,65 +6,64 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
-int 	read_width(const char *line, int *ind, va_list *arg_ptr)
+int 	read_width(const char **line, va_list *arg_ptr)
 {
 	char	*str;
 	int 	res;
 
-	if (line[*ind] == '*')
+	if (**line == '*')
 	{
-		(*ind)++;
+		(*line)++;
 		return (va_arg(*arg_ptr, int));
 	}
-	str = get_int_str(line, ind);
+	str = get_int_str(line);
 	res = ft_atoi(str);
 	free(str);
 	return (res);
 }
 
-int 	read_precision(const char *line, int *ind, t_format *f,
-					va_list *arg_ptr)
+int 	read_precision(const char **line, t_format *f, va_list *arg_ptr)
 {
 	char	*str;
 	int 	res;
 
-	if (line[*ind] != '.')
+	if (**line != '.')
 		return (-1);
-	(*ind)++;
-	if (line[*ind] == '*')
+	(*line)++;
+	if (**line == '*')
 	{
-		(*ind)++;
+		(*line)++;
 		f->flags = f->flags & (~FLAG_ZERO);
 		return (va_arg(*arg_ptr, int));
 	}
-	str = get_int_str(line, ind);
+	str = get_int_str(line);
 	res = ft_atoi(str);
 	free(str);
 	return (res);
 }
 
-char 	read_type(const char *line, int *ind)
+char 	read_type(const char **line)
 {
 	char	type;
 
-	type = line[*ind];
-	(*ind)++;
+	type = **line;
+	(*line)++;
 	return (type);
 }
 
-int 	get_format(t_format *f, const char *line, int *ind, va_list *arg_ptr)
+int 	get_format(t_format *f, const char **line, va_list *arg_ptr)
 {
-	if (line[*ind] != '%')
+	if (**line != '%')
 		return (0);
-	(*ind)++;
-	(*f).flags = read_flags(line, ind);
-	(*f).width = read_width(line, ind, arg_ptr);
+	(*line)++;
+	(*f).flags = read_flags(line);
+	(*f).width = read_width(line, arg_ptr);
 	if ((*f).width < 0)
 	{
 		(*f).flags = (*f).flags | FLAG_MINUS;
 		(*f).width *= -1;
 	}
-	(*f).precision = read_precision(line, ind, f, arg_ptr);
-	(*f).type = read_type(line, ind);
+	(*f).precision = read_precision(line, f, arg_ptr);
+	(*f).type = read_type(line);
 	return (1);
 }

@@ -16,23 +16,23 @@ int char_in_str(char c, const char *str)
 	return (0);
 }
 
-char	*get_int_str(const char *line, int *ind)
+char	*get_int_str(const char **line)
 {
 	int 	i;
 	char	*str;
 
 	str = malloc(12);
 	i = 0;
-	if (line[*ind] == '-')
+	if (**line == '-')
 	{
 		str[i++] = '-';
-		(*ind)++;
+		(*line)++;
 	}
-	while (ft_isdigit(line[*ind]))
+	while (ft_isdigit(**line))
 	{
-		str[i] = line[*ind];
+		str[i] = **line;
 		i++;
-		(*ind)++;
+		(*line)++;
 	}
 	str[i] = 0;
 	return (str);

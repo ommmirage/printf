@@ -4,24 +4,24 @@
 
 #include "../printf.h"
 
-int	read_flags(const char *line, int *ind)
+int	read_flags(const char **line)
 {
 	int	flags;
 
 	flags = FLAG_NONE;
-	while (char_in_str(line[*ind], FLAGS))
+	while (char_in_str(**line, FLAGS))
 	{
-		if (line[*ind] == '-')
+		if (**line == '-')
 			flags = flags | FLAG_MINUS;
-		else if (line[*ind] == '+')
+		else if (**line == '+')
 			flags = flags | FLAG_PLUS;
-		else if (line[*ind] == ' ')
+		else if (**line == ' ')
 			flags = flags | FLAG_SPACE;
-		else if (line[*ind] == '#')
+		else if (**line == '#')
 			flags = flags | FLAG_HASH;
-		else if (line[*ind] == '0')
+		else if (**line == '0')
 			flags = flags | FLAG_ZERO;
-		(*ind)++;
+		(*line)++;
 	}
 	return (flags);
 }
