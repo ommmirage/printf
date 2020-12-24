@@ -5,7 +5,7 @@ int main() {
 //	printf("%*.*d\n", 5, 10, 2);
 //	printf("%*.*d\n", 5, 3, 30);
 
-	printf("%%\n");
-	ft_printf("%*.*d", 5, 3, 20);
+//	printf("%d\n", printf("this %d number\n", 17));
+	printf("\n%d\n", ft_printf("%10.5d", -216));
 	return 0;
 }

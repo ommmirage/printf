@@ -5,6 +5,7 @@
 #include "../printf.h"
 #include <stdlib.h>
 #include <stdarg.h>
+#include <unistd.h>
 
 int 	read_width(const char **line, va_list *arg_ptr)
 {

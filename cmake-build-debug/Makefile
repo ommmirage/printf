@@ -251,6 +251,60 @@ printf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/printf.c.s
 .PHONY : printf.c.s
 
+processor/di.o: processor/di.c.o
+
+.PHONY : processor/di.o
+
+# target to build an object file
+processor/di.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/di.c.o
+.PHONY : processor/di.c.o
+
+processor/di.i: processor/di.c.i
+
+.PHONY : processor/di.i
+
+# target to preprocess a source file
+processor/di.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/di.c.i
+.PHONY : processor/di.c.i
+
+processor/di.s: processor/di.c.s
+
+.PHONY : processor/di.s
+
+# target to generate assembly for a file
+processor/di.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/di.c.s
+.PHONY : processor/di.c.s
+
+processor/di2.o: processor/di2.c.o
+
+.PHONY : processor/di2.o
+
+# target to build an object file
+processor/di2.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/di2.c.o
+.PHONY : processor/di2.c.o
+
+processor/di2.i: processor/di2.c.i
+
+.PHONY : processor/di2.i
+
+# target to preprocess a source file
+processor/di2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/di2.c.i
+.PHONY : processor/di2.c.i
+
+processor/di2.s: processor/di2.c.s
+
+.PHONY : processor/di2.s
+
+# target to generate assembly for a file
+processor/di2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/di2.c.s
+.PHONY : processor/di2.c.s
+
 processor/processor.o: processor/processor.c.o
 
 .PHONY : processor/processor.o
@@ -326,6 +380,12 @@ help:
 	@echo "... printf.o"
 	@echo "... printf.i"
 	@echo "... printf.s"
+	@echo "... processor/di.o"
+	@echo "... processor/di.i"
+	@echo "... processor/di.s"
+	@echo "... processor/di2.o"
+	@echo "... processor/di2.i"
+	@echo "... processor/di2.s"
 	@echo "... processor/processor.o"
 	@echo "... processor/processor.i"
 	@echo "... processor/processor.s"

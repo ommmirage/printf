@@ -17,6 +17,14 @@ CMakeFiles/printf.dir/printf.c.o
  /Users/dechanel/printf/libft/libft.h
  /Users/dechanel/printf/printf.c
  /Users/dechanel/printf/printf.h
+CMakeFiles/printf.dir/processor/di.c.o
+ /Users/dechanel/printf/libft/libft.h
+ /Users/dechanel/printf/printf.h
+ /Users/dechanel/printf/processor/di.c
+CMakeFiles/printf.dir/processor/di2.c.o
+ /Users/dechanel/printf/libft/libft.h
+ /Users/dechanel/printf/printf.h
+ /Users/dechanel/printf/processor/di2.c
 CMakeFiles/printf.dir/processor/processor.c.o
  /Users/dechanel/printf/libft/libft.h
  /Users/dechanel/printf/printf.h

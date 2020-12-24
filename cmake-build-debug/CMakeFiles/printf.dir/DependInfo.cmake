@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dechanel/printf/parser/flags.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/parser/flags.c.o"
   "/Users/dechanel/printf/parser/parser.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/parser/parser.c.o"
   "/Users/dechanel/printf/printf.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/printf.c.o"
+  "/Users/dechanel/printf/processor/di.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/processor/di.c.o"
+  "/Users/dechanel/printf/processor/di2.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/processor/di2.c.o"
   "/Users/dechanel/printf/processor/processor.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/processor/processor.c.o"
   "/Users/dechanel/printf/utils.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/utils.c.o"
   )

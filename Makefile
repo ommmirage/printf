@@ -1,6 +1,7 @@
 NAME = libftprintf.a
 
-SRC = printf.c utils.c parser/parser.c parser/flags.c processor/processor.c
+SRC =	printf.c utils.c parser/parser.c parser/flags.c processor/processor.c \
+		processor/di.c processor/di2.c
 
 HEAD = printf.h
 
@@ -15,7 +16,7 @@ $(NAME):	$(OBJ) $(HEAD)
 			ar rc $(NAME) $(OBJ) libft/*.o
 
 .c.o:
-			gcc $(FLAGS) -c $< -o $(<:.c=.o) -I ${HEAD}
+			gcc $(FLAGS) -c $< -o $(<:.c=.o)
 
 clean:
 			rm -f $(OBJ)

@@ -40,15 +40,17 @@ char	*get_int_str(const char **line)
 
 int		int_len(int num)
 {
-	int len;
+	int num_len;
 
-	len = 0;
+	if (num == 0)
+		return (1);
+	num_len = 0;
 	if (num < 0)
-		len++;
+		num_len++;
 	while (num != 0)
 	{
-		len++;
+		num_len++;
 		num /= 10;
 	}
-	return (len);
+	return (num_len);
 }
