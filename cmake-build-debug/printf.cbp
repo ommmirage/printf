@@ -114,6 +114,9 @@
 		<Unit filename="/Users/dechanel/printf/processor/s.c">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/dechanel/printf/processor/u.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/dechanel/printf/utils.c">
 			<Option target="printf"/>
 		</Unit>

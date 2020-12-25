@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dechanel/printf/processor/p.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/processor/p.c.o"
   "/Users/dechanel/printf/processor/processor.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/processor/processor.c.o"
   "/Users/dechanel/printf/processor/s.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/processor/s.c.o"
+  "/Users/dechanel/printf/processor/u.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/processor/u.c.o"
   "/Users/dechanel/printf/utils.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

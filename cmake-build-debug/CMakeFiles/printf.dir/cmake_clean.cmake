@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/processor/p.c.o"
   "CMakeFiles/printf.dir/processor/processor.c.o"
   "CMakeFiles/printf.dir/processor/s.c.o"
+  "CMakeFiles/printf.dir/processor/u.c.o"
   "CMakeFiles/printf.dir/utils.c.o"
   "printf"
   "printf.pdb"

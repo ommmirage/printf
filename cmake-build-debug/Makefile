@@ -413,6 +413,33 @@ processor/s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/s.c.s
 .PHONY : processor/s.c.s
 
+processor/u.o: processor/u.c.o
+
+.PHONY : processor/u.o
+
+# target to build an object file
+processor/u.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/u.c.o
+.PHONY : processor/u.c.o
+
+processor/u.i: processor/u.c.i
+
+.PHONY : processor/u.i
+
+# target to preprocess a source file
+processor/u.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/u.c.i
+.PHONY : processor/u.c.i
+
+processor/u.s: processor/u.c.s
+
+.PHONY : processor/u.s
+
+# target to generate assembly for a file
+processor/u.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/u.c.s
+.PHONY : processor/u.c.s
+
 utils.o: utils.c.o
 
 .PHONY : utils.o
@@ -479,6 +506,9 @@ help:
 	@echo "... processor/s.o"
 	@echo "... processor/s.i"
 	@echo "... processor/s.s"
+	@echo "... processor/u.o"
+	@echo "... processor/u.i"
+	@echo "... processor/u.s"
 	@echo "... utils.o"
 	@echo "... utils.i"
 	@echo "... utils.s"

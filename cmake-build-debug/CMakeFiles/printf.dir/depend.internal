@@ -47,6 +47,11 @@ CMakeFiles/printf.dir/processor/s.c.o
  /Users/dechanel/printf/printf.h
  /Users/dechanel/printf/processor/processor.h
  /Users/dechanel/printf/processor/s.c
+CMakeFiles/printf.dir/processor/u.c.o
+ /Users/dechanel/printf/libft/libft.h
+ /Users/dechanel/printf/printf.h
+ /Users/dechanel/printf/processor/processor.h
+ /Users/dechanel/printf/processor/u.c
 CMakeFiles/printf.dir/utils.c.o
  /Users/dechanel/printf/libft/libft.h
  /Users/dechanel/printf/printf.h
