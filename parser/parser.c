@@ -31,10 +31,10 @@ int 	read_precision(const char **line, t_format *f, va_list *arg_ptr)
 	if (**line != '.')
 		return (-1);
 	(*line)++;
+	f->flags = f->flags & (~FLAG_ZERO);
 	if (**line == '*')
 	{
 		(*line)++;
-		f->flags = f->flags & (~FLAG_ZERO);
 		return (va_arg(*arg_ptr, int));
 	}
 	str = get_int_str(line);

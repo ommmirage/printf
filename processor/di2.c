@@ -5,17 +5,19 @@
 #include "../printf.h"
 #include <unistd.h>
 
-void	write_num(int *num, int *num_len, int *printed_count)
+void	write_num(int num, int num_len, t_format f, int *printed_count)
 {
-	if (*num < 0)
+	if (f.precision == 0 && num == 0)
 	{
-		write(1, "-", 1);
-		(*num) *= -1;
-		(*num_len)--;
-		(*printed_count)++;
+		if (*printed_count < f.width)
+		{
+			write(1, " ", 1);
+			(*printed_count)++;
+		}
+		return ;
 	}
-	write(1, ft_itoa(*num), *num_len);
-	(*printed_count) += *num_len;
+	write(1, ft_itoa(num), num_len);
+	(*printed_count) += num_len;
 }
 
 void	width_spaces_after(t_format f, int *printed_count)

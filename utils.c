@@ -45,8 +45,6 @@ int		int_len(int num)
 	if (num == 0)
 		return (1);
 	num_len = 0;
-	if (num < 0)
-		num_len++;
 	while (num != 0)
 	{
 		num_len++;

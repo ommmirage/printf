@@ -28,6 +28,7 @@ typedef struct	s_format{
 	int		width;
 	int 	precision;
 	char	type;
+	int 	minus;
 }				t_format;
 
 int		ft_printf(const char *line, ...);
@@ -39,7 +40,7 @@ void	process(t_format f, int *len, va_list *arg_ptr);
 int		int_len(int num);
 void	check_double_percent(const char **line, int *len);
 int		di(t_format f, int num);
-void	write_num(int *num, int *num_len, int *printed_count);
+void	write_num(int num, int num_len, t_format f, int *printed_count);
 void	width_spaces_after(t_format f, int *printed_count);
 
 #endif

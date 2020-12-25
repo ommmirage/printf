@@ -6,6 +6,6 @@ int main() {
 //	printf("%*.*d\n", 5, 3, 30);
 
 //	printf("%d\n", printf("this %d number\n", 17));
-	printf("\n%d\n", ft_printf("%10.5d", -216));
+	printf("\n%d\n", ft_printf("%5.0d", 0));
 	return 0;
 }
