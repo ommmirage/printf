@@ -21,5 +21,6 @@ int		s(t_format f, const char *str);
 void	print_str(t_format f, const char *str, int str_len, int *printed_count);
 void	width_before(t_format f, int *printed_count, int len);
 int		p(t_format f, long p);
+int		x(t_format f, unsigned int num);
 
 #endif

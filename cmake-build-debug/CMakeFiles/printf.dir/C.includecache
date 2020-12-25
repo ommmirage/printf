@@ -6,8 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/Users/dechanel/printf/libft/ft_u_len.c
+
 /Users/dechanel/printf/libft/libft.h
 stdio.h
+-
+
+/Users/dechanel/printf/libft/long_to_hex.c
+libft.h
+/Users/dechanel/printf/libft/libft.h
+stdlib.h
 -
 
 /Users/dechanel/printf/main.c
@@ -79,6 +87,12 @@ processor.h
 /Users/dechanel/printf/processor/u.c
 processor.h
 /Users/dechanel/printf/processor/processor.h
+
+/Users/dechanel/printf/processor/x.c
+processor.h
+/Users/dechanel/printf/processor/processor.h
+stdlib.h
+-
 
 /Users/dechanel/printf/utils.c
 stdlib.h

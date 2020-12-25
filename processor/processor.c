@@ -19,6 +19,8 @@ void	process(t_format f, int *len, va_list *arg_ptr)
 		(*len) += c(f, '%');
 	else if (f.type == 'p')
 		(*len) += p(f, va_arg(*arg_ptr, long));
+	else if (f.type == 'x')
+		(*len) += x(f, va_arg(*arg_ptr, unsigned int));
 	else
 		return ;
 }

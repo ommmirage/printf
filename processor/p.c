@@ -5,59 +5,6 @@
 #include "processor.h"
 #include <stdlib.h>
 
-void add_digit_to_str(char **str, int h)
-{
-	if (h < 10)
-		**str = '0' + h;
-	else if (h == 10)
-		**str = 'a';
-	else if (h == 11)
-		**str = 'b';
-	else if (h == 12)
-		**str = 'c';
-	else if (h == 13)
-		**str = 'd';
-	else if (h == 14)
-		**str = 'e';
-	else if (h == 15)
-		**str = 'f';
-	(*str)++;
-}
-
-void	fill_str(char **str, long l)
-{
-	int		last;
-
-	last = (int)(l % 16);
-	l /= 16;
-	if (l != 0)
-		fill_str(str, l);
-	add_digit_to_str(str, last);
-}
-
-char	*long_to_hex(long l)
-{
-	char	*str;
-	char	*res;
-
-	str = malloc(11);
-	res = str;
-	str[0] = '0';
-	str[1] = 'x';
-	str += 2;
-	if (l == 0)
-	{
-		*str = '0';
-		*(str + 1) = 0;
-	}
-	else
-	{
-		fill_str(&str, l);
-		*str = 0;
-	}
-	return (res);
-}
-
 void	p_width_before(t_format f, int *printed_count, int len)
 {
 	char	space_or_zero;
@@ -96,7 +43,7 @@ int		p(t_format f, long p)
 	int		str_len;
 
 	printed = 0;
-	str = long_to_hex(p);
+	str = long_to_hex0x(p);
 	str_len = ft_strlen(str);
 	if ((p == 0) && (f.precision == 0))
 		str_len = 2;

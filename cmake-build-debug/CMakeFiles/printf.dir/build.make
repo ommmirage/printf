@@ -233,6 +233,45 @@ CMakeFiles/printf.dir/processor/u.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/processor/u.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dechanel/printf/processor/u.c -o CMakeFiles/printf.dir/processor/u.c.s
 
+CMakeFiles/printf.dir/processor/x.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/processor/x.c.o: ../processor/x.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dechanel/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/printf.dir/processor/x.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/processor/x.c.o   -c /Users/dechanel/printf/processor/x.c
+
+CMakeFiles/printf.dir/processor/x.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/processor/x.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dechanel/printf/processor/x.c > CMakeFiles/printf.dir/processor/x.c.i
+
+CMakeFiles/printf.dir/processor/x.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/processor/x.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dechanel/printf/processor/x.c -o CMakeFiles/printf.dir/processor/x.c.s
+
+CMakeFiles/printf.dir/libft/ft_u_len.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/libft/ft_u_len.c.o: ../libft/ft_u_len.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dechanel/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/printf.dir/libft/ft_u_len.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/libft/ft_u_len.c.o   -c /Users/dechanel/printf/libft/ft_u_len.c
+
+CMakeFiles/printf.dir/libft/ft_u_len.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/libft/ft_u_len.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dechanel/printf/libft/ft_u_len.c > CMakeFiles/printf.dir/libft/ft_u_len.c.i
+
+CMakeFiles/printf.dir/libft/ft_u_len.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/libft/ft_u_len.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dechanel/printf/libft/ft_u_len.c -o CMakeFiles/printf.dir/libft/ft_u_len.c.s
+
+CMakeFiles/printf.dir/libft/long_to_hex.c.o: CMakeFiles/printf.dir/flags.make
+CMakeFiles/printf.dir/libft/long_to_hex.c.o: ../libft/long_to_hex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dechanel/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/printf.dir/libft/long_to_hex.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/printf.dir/libft/long_to_hex.c.o   -c /Users/dechanel/printf/libft/long_to_hex.c
+
+CMakeFiles/printf.dir/libft/long_to_hex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/printf.dir/libft/long_to_hex.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dechanel/printf/libft/long_to_hex.c > CMakeFiles/printf.dir/libft/long_to_hex.c.i
+
+CMakeFiles/printf.dir/libft/long_to_hex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/printf.dir/libft/long_to_hex.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dechanel/printf/libft/long_to_hex.c -o CMakeFiles/printf.dir/libft/long_to_hex.c.s
+
 # Object files for target printf
 printf_OBJECTS = \
 "CMakeFiles/printf.dir/main.c.o" \
@@ -246,7 +285,10 @@ printf_OBJECTS = \
 "CMakeFiles/printf.dir/processor/c.c.o" \
 "CMakeFiles/printf.dir/processor/s.c.o" \
 "CMakeFiles/printf.dir/processor/p.c.o" \
-"CMakeFiles/printf.dir/processor/u.c.o"
+"CMakeFiles/printf.dir/processor/u.c.o" \
+"CMakeFiles/printf.dir/processor/x.c.o" \
+"CMakeFiles/printf.dir/libft/ft_u_len.c.o" \
+"CMakeFiles/printf.dir/libft/long_to_hex.c.o"
 
 # External object files for target printf
 printf_EXTERNAL_OBJECTS =
@@ -263,10 +305,13 @@ printf: CMakeFiles/printf.dir/processor/c.c.o
 printf: CMakeFiles/printf.dir/processor/s.c.o
 printf: CMakeFiles/printf.dir/processor/p.c.o
 printf: CMakeFiles/printf.dir/processor/u.c.o
+printf: CMakeFiles/printf.dir/processor/x.c.o
+printf: CMakeFiles/printf.dir/libft/ft_u_len.c.o
+printf: CMakeFiles/printf.dir/libft/long_to_hex.c.o
 printf: CMakeFiles/printf.dir/build.make
 printf: ../libft/libft.a
 printf: CMakeFiles/printf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dechanel/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable printf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dechanel/printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C executable printf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/printf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

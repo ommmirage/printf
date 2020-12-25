@@ -143,6 +143,60 @@ printf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/build
 .PHONY : printf/fast
 
+libft/ft_u_len.o: libft/ft_u_len.c.o
+
+.PHONY : libft/ft_u_len.o
+
+# target to build an object file
+libft/ft_u_len.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_u_len.c.o
+.PHONY : libft/ft_u_len.c.o
+
+libft/ft_u_len.i: libft/ft_u_len.c.i
+
+.PHONY : libft/ft_u_len.i
+
+# target to preprocess a source file
+libft/ft_u_len.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_u_len.c.i
+.PHONY : libft/ft_u_len.c.i
+
+libft/ft_u_len.s: libft/ft_u_len.c.s
+
+.PHONY : libft/ft_u_len.s
+
+# target to generate assembly for a file
+libft/ft_u_len.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_u_len.c.s
+.PHONY : libft/ft_u_len.c.s
+
+libft/long_to_hex.o: libft/long_to_hex.c.o
+
+.PHONY : libft/long_to_hex.o
+
+# target to build an object file
+libft/long_to_hex.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/long_to_hex.c.o
+.PHONY : libft/long_to_hex.c.o
+
+libft/long_to_hex.i: libft/long_to_hex.c.i
+
+.PHONY : libft/long_to_hex.i
+
+# target to preprocess a source file
+libft/long_to_hex.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/long_to_hex.c.i
+.PHONY : libft/long_to_hex.c.i
+
+libft/long_to_hex.s: libft/long_to_hex.c.s
+
+.PHONY : libft/long_to_hex.s
+
+# target to generate assembly for a file
+libft/long_to_hex.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/long_to_hex.c.s
+.PHONY : libft/long_to_hex.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -440,6 +494,33 @@ processor/u.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/u.c.s
 .PHONY : processor/u.c.s
 
+processor/x.o: processor/x.c.o
+
+.PHONY : processor/x.o
+
+# target to build an object file
+processor/x.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/x.c.o
+.PHONY : processor/x.c.o
+
+processor/x.i: processor/x.c.i
+
+.PHONY : processor/x.i
+
+# target to preprocess a source file
+processor/x.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/x.c.i
+.PHONY : processor/x.c.i
+
+processor/x.s: processor/x.c.s
+
+.PHONY : processor/x.s
+
+# target to generate assembly for a file
+processor/x.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/x.c.s
+.PHONY : processor/x.c.s
+
 utils.o: utils.c.o
 
 .PHONY : utils.o
@@ -476,6 +557,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... printf"
+	@echo "... libft/ft_u_len.o"
+	@echo "... libft/ft_u_len.i"
+	@echo "... libft/ft_u_len.s"
+	@echo "... libft/long_to_hex.o"
+	@echo "... libft/long_to_hex.i"
+	@echo "... libft/long_to_hex.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -509,6 +596,9 @@ help:
 	@echo "... processor/u.o"
 	@echo "... processor/u.i"
 	@echo "... processor/u.s"
+	@echo "... processor/x.o"
+	@echo "... processor/x.i"
+	@echo "... processor/x.s"
 	@echo "... utils.o"
 	@echo "... utils.i"
 	@echo "... utils.s"

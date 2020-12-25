@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/dechanel/printf/libft/ft_u_len.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_u_len.c.o"
+  "/Users/dechanel/printf/libft/long_to_hex.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/long_to_hex.c.o"
   "/Users/dechanel/printf/main.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/main.c.o"
   "/Users/dechanel/printf/parser/flags.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/parser/flags.c.o"
   "/Users/dechanel/printf/parser/parser.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/parser/parser.c.o"
@@ -15,6 +17,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dechanel/printf/processor/processor.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/processor/processor.c.o"
   "/Users/dechanel/printf/processor/s.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/processor/s.c.o"
   "/Users/dechanel/printf/processor/u.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/processor/u.c.o"
+  "/Users/dechanel/printf/processor/x.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/processor/x.c.o"
   "/Users/dechanel/printf/utils.c" "/Users/dechanel/printf/cmake-build-debug/CMakeFiles/printf.dir/utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

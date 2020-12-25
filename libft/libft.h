@@ -75,5 +75,8 @@ t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 t_list			*ft_lstnew(void *content);
 int				ft_lstsize(t_list *lst);
 int				ft_isspace_bonus(char c);
+int				ft_u_len(unsigned int num);
+char			*long_to_hex(long l);
+char			*long_to_hex0x(long l);
 
 #endif

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/printf.dir/libft/ft_u_len.c.o"
+  "CMakeFiles/printf.dir/libft/long_to_hex.c.o"
   "CMakeFiles/printf.dir/main.c.o"
   "CMakeFiles/printf.dir/parser/flags.c.o"
   "CMakeFiles/printf.dir/parser/parser.c.o"
@@ -10,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/processor/processor.c.o"
   "CMakeFiles/printf.dir/processor/s.c.o"
   "CMakeFiles/printf.dir/processor/u.c.o"
+  "CMakeFiles/printf.dir/processor/x.c.o"
   "CMakeFiles/printf.dir/utils.c.o"
   "printf"
   "printf.pdb"

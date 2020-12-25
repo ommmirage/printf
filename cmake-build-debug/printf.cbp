@@ -78,6 +78,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/dechanel/printf/libft/ft_u_len.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/dechanel/printf/libft/long_to_hex.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/dechanel/printf/main.c">
 			<Option target="printf"/>
 		</Unit>
@@ -115,6 +121,9 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/dechanel/printf/processor/u.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/dechanel/printf/processor/x.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/dechanel/printf/utils.c">
