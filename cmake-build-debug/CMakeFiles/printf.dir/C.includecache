@@ -10,19 +10,17 @@
 stdio.h
 -
 
+/Users/dechanel/printf/parser/parser.c
+../printf.h
+/Users/dechanel/printf/printf.h
+stdlib.h
+-
+stdarg.h
+-
+unistd.h
+-
+
 /Users/dechanel/printf/printf.h
 libft/libft.h
 /Users/dechanel/printf/libft/libft.h
-
-/Users/dechanel/printf/processor/XX.c
-processor.h
-/Users/dechanel/printf/processor/processor.h
-stdlib.h
--
-
-/Users/dechanel/printf/processor/processor.h
-../printf.h
-/Users/dechanel/printf/printf.h
-unistd.h
--
 

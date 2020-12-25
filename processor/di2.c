@@ -28,3 +28,24 @@ void	write_minus(int *minus, int *printed_count)
 		(*minus) = 0;
 	}
 }
+
+void	precision_zeroes(int precision, int num_len, int *printed_count)
+{
+	while (precision > num_len)
+	{
+		write(1, "0", 1);
+		num_len++;
+		(*printed_count)++;
+	}
+}
+
+void	width_spaces_after(t_format f, int *printed_count)
+{
+	if (f.flags & FLAG_MINUS)
+		while ((f.width > f.precision) && (f.width > *printed_count))
+		{
+			write(1, " ", 1);
+			f.precision++;
+			(*printed_count)++;
+		}
+}

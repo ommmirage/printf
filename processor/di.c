@@ -4,7 +4,7 @@
 
 #include "processor.h"
 
-void	width_spaces_before(t_format f, int *printed_count, int len)
+void		width_spaces_before(t_format f, int *printed_count, int len)
 {
 	if (!(f.flags & FLAG_ZERO) && !(f.flags & FLAG_MINUS))
 	{
@@ -19,7 +19,7 @@ void	width_spaces_before(t_format f, int *printed_count, int len)
 	}
 }
 
-void	width_zeroes_before(t_format f, int *printed_count, int len)
+void		width_zeroes_before(t_format f, int *printed_count, int len)
 {
 	if (f.flags & FLAG_ZERO)
 		while ((f.width > f.precision) && (f.width > len))
@@ -30,32 +30,23 @@ void	width_zeroes_before(t_format f, int *printed_count, int len)
 		}
 }
 
-void	precision_zeroes(int precision, int num_len, int *printed_count)
+static int min_max(int num)
 {
-	while (precision > num_len)
+	if (num == -2147483648)
 	{
-		write(1, "0", 1);
-		num_len++;
-		(*printed_count)++;
+		write(1, "-2147483648", 11);
+		return (1);
 	}
+	return (0);
 }
 
-void	width_spaces_after(t_format f, int *printed_count)
-{
-	if (f.flags & FLAG_MINUS)
-		while ((f.width > f.precision) && (f.width > *printed_count))
-		{
-			write(1, " ", 1);
-			f.precision++;
-			(*printed_count)++;
-		}
-}
-
-int		di(t_format f, int num)
+int			di(t_format f, int num)
 {
 	int num_len;
 	int printed_count;
 
+	if (min_max(num))
+		return (11);
 	printed_count = 0;
 	if (num < 0)
 	{

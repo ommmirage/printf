@@ -61,10 +61,12 @@ int 	get_format(t_format *f, const char **line, va_list *arg_ptr)
 	(*f).width = read_width(line, arg_ptr);
 	if ((*f).width < 0)
 	{
-		(*f).flags = (*f).flags | FLAG_MINUS;
+		(*f).flags = FLAG_MINUS;
 		(*f).width *= -1;
 	}
 	(*f).precision = read_precision(line, f, arg_ptr);
+	if (f->precision < -1)
+		f->precision = -1;
 	(*f).type = read_type(line);
 	if (f->type == 0)
 		return (0);
