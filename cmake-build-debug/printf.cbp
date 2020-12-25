@@ -102,7 +102,13 @@
 		<Unit filename="/Users/dechanel/printf/processor/di2.c">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/dechanel/printf/processor/p.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/dechanel/printf/processor/processor.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/dechanel/printf/processor/processor.h">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/dechanel/printf/processor/s.c">

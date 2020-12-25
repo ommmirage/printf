@@ -2,16 +2,21 @@
 // Created by Dewitt Chanell on 12/25/20.
 //
 
-#include "../printf.h"
-#include <unistd.h>
+#include "processor.h"
 
-static void	width_spaces_before(t_format f, int *printed_count)
+static void	width_before(t_format f, int *printed_count)
 {
-	if (!(f.flags & FLAG_ZERO) && !(f.flags & FLAG_MINUS))
+	char	space_or_zero;
+
+	if (f.flags & FLAG_ZERO)
+		space_or_zero = '0';
+	else
+		space_or_zero = ' ';
+	if (!(f.flags & FLAG_MINUS))
 	{
 		while (f.width > 1)
 		{
-			write(1, " ", 1);
+			write(1, &space_or_zero, 1);
 			f.width--;
 			(*printed_count)++;
 		}
@@ -43,7 +48,7 @@ int			c(t_format f, int int_char)
 	int 	printed_count;
 
 	printed_count = 0;
-	width_spaces_before(f, &printed_count);
+	width_before(f, &printed_count);
 	print_char(int_char, &printed_count);
 	width_spaces_after(f, &printed_count);
 	return (printed_count);

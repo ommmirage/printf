@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/processor/c.c.o"
   "CMakeFiles/printf.dir/processor/di.c.o"
   "CMakeFiles/printf.dir/processor/di2.c.o"
+  "CMakeFiles/printf.dir/processor/p.c.o"
   "CMakeFiles/printf.dir/processor/processor.c.o"
   "CMakeFiles/printf.dir/processor/s.c.o"
   "CMakeFiles/printf.dir/utils.c.o"

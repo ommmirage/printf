@@ -37,13 +37,7 @@ int		read_flags(const char **line);
 int 	get_format(t_format *f, const char **line, va_list *arg_ptr);
 char	*get_int_str(const char **line);
 void	process(t_format f, int *len, va_list *arg_ptr);
-int		int_len(int num);
 void	check_double_percent(const char **line, int *len);
-int		di(t_format f, int num);
-void	write_minus(int *minus, int *printed_count);
-void	write_num(int num, int num_len, t_format f, int *printed_count);
-int		c(t_format f, int int_char);
-int		s(t_format f, const char *str);
-
+int		int_len(int num);
 
 #endif

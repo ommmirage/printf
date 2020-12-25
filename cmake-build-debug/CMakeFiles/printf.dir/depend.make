@@ -20,21 +20,31 @@ CMakeFiles/printf.dir/printf.c.o: ../printf.h
 CMakeFiles/printf.dir/processor/c.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/processor/c.c.o: ../printf.h
 CMakeFiles/printf.dir/processor/c.c.o: ../processor/c.c
+CMakeFiles/printf.dir/processor/c.c.o: ../processor/processor.h
 
 CMakeFiles/printf.dir/processor/di.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/processor/di.c.o: ../printf.h
 CMakeFiles/printf.dir/processor/di.c.o: ../processor/di.c
+CMakeFiles/printf.dir/processor/di.c.o: ../processor/processor.h
 
 CMakeFiles/printf.dir/processor/di2.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/processor/di2.c.o: ../printf.h
 CMakeFiles/printf.dir/processor/di2.c.o: ../processor/di2.c
+CMakeFiles/printf.dir/processor/di2.c.o: ../processor/processor.h
+
+CMakeFiles/printf.dir/processor/p.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/processor/p.c.o: ../printf.h
+CMakeFiles/printf.dir/processor/p.c.o: ../processor/p.c
+CMakeFiles/printf.dir/processor/p.c.o: ../processor/processor.h
 
 CMakeFiles/printf.dir/processor/processor.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/processor/processor.c.o: ../printf.h
 CMakeFiles/printf.dir/processor/processor.c.o: ../processor/processor.c
+CMakeFiles/printf.dir/processor/processor.c.o: ../processor/processor.h
 
 CMakeFiles/printf.dir/processor/s.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/processor/s.c.o: ../printf.h
+CMakeFiles/printf.dir/processor/s.c.o: ../processor/processor.h
 CMakeFiles/printf.dir/processor/s.c.o: ../processor/s.c
 
 CMakeFiles/printf.dir/utils.c.o: ../libft/libft.h

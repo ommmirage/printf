@@ -1,11 +1,12 @@
-NAME = libftprintf.a
+NAME =	libftprintf.a
 
-SRC =	printf.c utils.c parser/parser.c parser/flags.c processor/processor.c \
-		processor/di.c processor/di2.c processor/c.c processor/s.c
+SRC	=	printf.c utils.c parser/parser.c parser/flags.c processor/processor.c \
+		processor/di.c processor/di2.c processor/c.c processor/s.c \
+		processor/p.c
 
-HEAD = printf.h
+HEAD =	printf.h processor/processor.h
 
-OBJ	= ${SRC:.c=.o}
+OBJ	= 	${SRC:.c=.o}
 
 FLAGS		= -Wall -Wextra -Werror
 

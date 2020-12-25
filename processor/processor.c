@@ -2,7 +2,7 @@
 // Created by mirage on 22.12.2020.
 //
 
-#include "../printf.h"
+#include "processor.h"
 #include <stdarg.h>
 
 void	process(t_format f, int *len, va_list *arg_ptr)
@@ -14,7 +14,9 @@ void	process(t_format f, int *len, va_list *arg_ptr)
 	else if (f.type == 's')
 		(*len) += s(f, va_arg(*arg_ptr, char*));
 	else if (f.type == '%')
+		(*len) += c(f, '%');
+	else if (f.type == 'p')
+		(*len) += p(f, va_arg(*arg_ptr, long));
+	else
 		return ;
-
-
 }

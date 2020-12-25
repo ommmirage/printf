@@ -2,8 +2,7 @@
 // Created by Dewitt Chanell on 12/25/20.
 //
 
-#include "../printf.h"
-#include <unistd.h>
+#include "processor.h"
 
 static void	width_before(t_format f, int *printed_count, int len)
 {
@@ -37,8 +36,8 @@ static void	width_spaces_after(t_format f, int *printed_count)
 		}
 }
 
-static void	print_str(t_format f, const char *str, int str_len,
-					  int *printed_count)
+void		print_str(t_format f, const char *str, int str_len,
+				int *printed_count)
 {
 	if ((f.precision != -1) && (f.precision < str_len))
 		str_len = f.precision;

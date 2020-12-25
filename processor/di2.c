@@ -2,8 +2,7 @@
 // Created by Dewitt Chanell on 12/24/20.
 //
 
-#include "../printf.h"
-#include <unistd.h>
+#include "processor.h"
 
 void	write_num(int num, int num_len, t_format f, int *printed_count)
 {

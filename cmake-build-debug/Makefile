@@ -332,6 +332,33 @@ processor/di2.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/di2.c.s
 .PHONY : processor/di2.c.s
 
+processor/p.o: processor/p.c.o
+
+.PHONY : processor/p.o
+
+# target to build an object file
+processor/p.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/p.c.o
+.PHONY : processor/p.c.o
+
+processor/p.i: processor/p.c.i
+
+.PHONY : processor/p.i
+
+# target to preprocess a source file
+processor/p.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/p.c.i
+.PHONY : processor/p.c.i
+
+processor/p.s: processor/p.c.s
+
+.PHONY : processor/p.s
+
+# target to generate assembly for a file
+processor/p.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/p.c.s
+.PHONY : processor/p.c.s
+
 processor/processor.o: processor/processor.c.o
 
 .PHONY : processor/processor.o
@@ -443,6 +470,9 @@ help:
 	@echo "... processor/di2.o"
 	@echo "... processor/di2.i"
 	@echo "... processor/di2.s"
+	@echo "... processor/p.o"
+	@echo "... processor/p.i"
+	@echo "... processor/p.s"
 	@echo "... processor/processor.o"
 	@echo "... processor/processor.i"
 	@echo "... processor/processor.s"
