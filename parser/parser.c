@@ -66,5 +66,7 @@ int 	get_format(t_format *f, const char **line, va_list *arg_ptr)
 	}
 	(*f).precision = read_precision(line, f, arg_ptr);
 	(*f).type = read_type(line);
+	if (f->type == 0)
+		return (0);
 	return (1);
 }

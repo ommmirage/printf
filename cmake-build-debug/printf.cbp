@@ -99,6 +99,9 @@
 		<Unit filename="/Users/dechanel/printf/printf.h">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/dechanel/printf/processor/XX.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/dechanel/printf/processor/c.c">
 			<Option target="printf"/>
 		</Unit>

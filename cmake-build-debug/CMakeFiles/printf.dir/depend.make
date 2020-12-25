@@ -22,6 +22,11 @@ CMakeFiles/printf.dir/printf.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/printf.c.o: ../printf.c
 CMakeFiles/printf.dir/printf.c.o: ../printf.h
 
+CMakeFiles/printf.dir/processor/XX.c.o: ../libft/libft.h
+CMakeFiles/printf.dir/processor/XX.c.o: ../printf.h
+CMakeFiles/printf.dir/processor/XX.c.o: ../processor/XX.c
+CMakeFiles/printf.dir/processor/XX.c.o: ../processor/processor.h
+
 CMakeFiles/printf.dir/processor/c.c.o: ../libft/libft.h
 CMakeFiles/printf.dir/processor/c.c.o: ../printf.h
 CMakeFiles/printf.dir/processor/c.c.o: ../processor/c.c

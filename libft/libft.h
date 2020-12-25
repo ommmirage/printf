@@ -78,5 +78,6 @@ int				ft_isspace_bonus(char c);
 int				ft_u_len(unsigned int num);
 char			*long_to_hex(long l);
 char			*long_to_hex0x(long l);
+char			*long_to_hex_upper(long l);
 
 #endif

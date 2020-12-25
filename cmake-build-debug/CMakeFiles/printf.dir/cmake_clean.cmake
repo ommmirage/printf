@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/parser/flags.c.o"
   "CMakeFiles/printf.dir/parser/parser.c.o"
   "CMakeFiles/printf.dir/printf.c.o"
+  "CMakeFiles/printf.dir/processor/XX.c.o"
   "CMakeFiles/printf.dir/processor/c.c.o"
   "CMakeFiles/printf.dir/processor/di.c.o"
   "CMakeFiles/printf.dir/processor/di2.c.o"
