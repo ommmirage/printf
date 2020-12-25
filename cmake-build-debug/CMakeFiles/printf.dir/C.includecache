@@ -18,33 +18,9 @@ libft/libft.h
 processor.h
 /Users/dechanel/printf/processor/processor.h
 
-/Users/dechanel/printf/processor/di.c
-processor.h
-/Users/dechanel/printf/processor/processor.h
-
-/Users/dechanel/printf/processor/di2.c
-processor.h
-/Users/dechanel/printf/processor/processor.h
-
-/Users/dechanel/printf/processor/p.c
-processor.h
-/Users/dechanel/printf/processor/processor.h
-stdlib.h
--
-
-/Users/dechanel/printf/processor/processor.c
-processor.h
-/Users/dechanel/printf/processor/processor.h
-stdarg.h
--
-
 /Users/dechanel/printf/processor/processor.h
 ../printf.h
 /Users/dechanel/printf/printf.h
 unistd.h
 -
-
-/Users/dechanel/printf/processor/s.c
-processor.h
-/Users/dechanel/printf/processor/processor.h
 

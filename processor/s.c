@@ -4,7 +4,7 @@
 
 #include "processor.h"
 
-static void	width_before(t_format f, int *printed_count, int len)
+void		width_before(t_format f, int *printed_count, int len)
 {
 	char	space_or_zero;
 
@@ -25,7 +25,7 @@ static void	width_before(t_format f, int *printed_count, int len)
 	}
 }
 
-static void	width_spaces_after(t_format f, int *printed_count)
+static void	s_width_spaces_after(t_format f, int *printed_count)
 {
 	if (f.flags & FLAG_MINUS)
 		while (f.width > *printed_count)
@@ -56,13 +56,13 @@ int			s(t_format f, const char *str)
 		str_len = ft_strlen(str);
 		width_before(f, &printed_count, str_len);
 		print_str(f, str, str_len, &printed_count);
-		width_spaces_after(f, &printed_count);
+		s_width_spaces_after(f, &printed_count);
 	}
 	else
 	{
 		width_before(f, &printed_count, 6);
 		print_str(f, "(null)", 6, &printed_count);
-		width_spaces_after(f, &printed_count);
+		s_width_spaces_after(f, &printed_count);
 	}
 	return (printed_count);
 }

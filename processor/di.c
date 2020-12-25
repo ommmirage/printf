@@ -40,7 +40,7 @@ void	precision_zeroes(int precision, int num_len, int *printed_count)
 	}
 }
 
-static void	width_spaces_after(t_format f, int *printed_count)
+void	width_spaces_after(t_format f, int *printed_count)
 {
 	if (f.flags & FLAG_MINUS)
 		while ((f.width > f.precision) && (f.width > *printed_count))

@@ -31,12 +31,8 @@ void	fill_str(char **str, long l)
 	last = (int)(l % 16);
 	l /= 16;
 	if (l != 0)
-	{
 		fill_str(str, l);
-		add_digit_to_str(str, last);
-	}
-	else
-		**str = 0;
+	add_digit_to_str(str, last);
 }
 
 char	*long_to_hex(long l)
@@ -45,21 +41,55 @@ char	*long_to_hex(long l)
 	char	*res;
 
 	str = malloc(11);
+	res = str;
 	str[0] = '0';
 	str[1] = 'x';
 	str += 2;
-	res = str;
 	if (l == 0)
 	{
 		*str = '0';
 		*(str + 1) = 0;
 	}
 	else
+	{
 		fill_str(&str, l);
+		*str = 0;
+	}
 	return (res);
 }
 
-int	p(t_format f, long p)
+void	p_width_before(t_format f, int *printed_count, int len)
+{
+	char	space_or_zero;
+
+	if (f.flags & FLAG_ZERO)
+		space_or_zero = '0';
+	else
+		space_or_zero = ' ';
+	if (!(f.flags & FLAG_MINUS))
+	{
+		while ((f.width > f.precision) && (f.width > len))
+		{
+			write(1, &space_or_zero, 1);
+			f.width--;
+			(*printed_count)++;
+		}
+	}
+}
+
+void	p_print_str(const char *str, int str_len, t_format f,
+				 int *printed_count)
+{
+	write(1, "0x", 2);
+	str += 2;
+	(*printed_count) += 2;
+	precision_zeroes(f.precision, str_len, printed_count);
+	write(1, str, str_len - 2);
+	(*printed_count) += (str_len - 2);
+	width_spaces_after(f, printed_count);
+}
+
+int		p(t_format f, long p)
 {
 	int 	printed;
 	char	*str;
@@ -68,7 +98,16 @@ int	p(t_format f, long p)
 	printed = 0;
 	str = long_to_hex(p);
 	str_len = ft_strlen(str);
-	print_str(f, str, str_len, &printed);
-	free(str);
+	if ((p == 0) && (f.precision == 0))
+		str_len = 2;
+	if (f.precision != -1)
+		f.precision += 2;
+	p_width_before(f, &printed, str_len);
+	p_print_str(str, str_len, f, &printed);
+	if (printed == 0)
+	{
+		write(1, "0x", 2);
+		printed += 2;
+	}
 	return (printed);
 }
