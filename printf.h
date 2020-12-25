@@ -40,7 +40,10 @@ void	process(t_format f, int *len, va_list *arg_ptr);
 int		int_len(int num);
 void	check_double_percent(const char **line, int *len);
 int		di(t_format f, int num);
+void	write_minus(int *minus, int *printed_count);
 void	write_num(int num, int num_len, t_format f, int *printed_count);
-void	width_spaces_after(t_format f, int *printed_count);
+int		c(t_format f, int int_char);
+int		s(t_format f, const char *str);
+
 
 #endif

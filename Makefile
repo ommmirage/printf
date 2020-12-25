@@ -1,7 +1,7 @@
 NAME = libftprintf.a
 
 SRC =	printf.c utils.c parser/parser.c parser/flags.c processor/processor.c \
-		processor/di.c processor/di2.c
+		processor/di.c processor/di2.c processor/c.c processor/s.c
 
 HEAD = printf.h
 

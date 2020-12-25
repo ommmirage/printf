@@ -93,6 +93,9 @@
 		<Unit filename="/Users/dechanel/printf/printf.h">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/dechanel/printf/processor/c.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/dechanel/printf/processor/di.c">
 			<Option target="printf"/>
 		</Unit>
@@ -100,6 +103,9 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/dechanel/printf/processor/processor.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/dechanel/printf/processor/s.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/dechanel/printf/utils.c">

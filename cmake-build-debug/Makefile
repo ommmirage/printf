@@ -251,6 +251,33 @@ printf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/printf.c.s
 .PHONY : printf.c.s
 
+processor/c.o: processor/c.c.o
+
+.PHONY : processor/c.o
+
+# target to build an object file
+processor/c.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/c.c.o
+.PHONY : processor/c.c.o
+
+processor/c.i: processor/c.c.i
+
+.PHONY : processor/c.i
+
+# target to preprocess a source file
+processor/c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/c.c.i
+.PHONY : processor/c.c.i
+
+processor/c.s: processor/c.c.s
+
+.PHONY : processor/c.s
+
+# target to generate assembly for a file
+processor/c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/c.c.s
+.PHONY : processor/c.c.s
+
 processor/di.o: processor/di.c.o
 
 .PHONY : processor/di.o
@@ -332,6 +359,33 @@ processor/processor.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/processor.c.s
 .PHONY : processor/processor.c.s
 
+processor/s.o: processor/s.c.o
+
+.PHONY : processor/s.o
+
+# target to build an object file
+processor/s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/s.c.o
+.PHONY : processor/s.c.o
+
+processor/s.i: processor/s.c.i
+
+.PHONY : processor/s.i
+
+# target to preprocess a source file
+processor/s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/s.c.i
+.PHONY : processor/s.c.i
+
+processor/s.s: processor/s.c.s
+
+.PHONY : processor/s.s
+
+# target to generate assembly for a file
+processor/s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/s.c.s
+.PHONY : processor/s.c.s
+
 utils.o: utils.c.o
 
 .PHONY : utils.o
@@ -380,6 +434,9 @@ help:
 	@echo "... printf.o"
 	@echo "... printf.i"
 	@echo "... printf.s"
+	@echo "... processor/c.o"
+	@echo "... processor/c.i"
+	@echo "... processor/c.s"
 	@echo "... processor/di.o"
 	@echo "... processor/di.i"
 	@echo "... processor/di.s"
@@ -389,6 +446,9 @@ help:
 	@echo "... processor/processor.o"
 	@echo "... processor/processor.i"
 	@echo "... processor/processor.s"
+	@echo "... processor/s.o"
+	@echo "... processor/s.i"
+	@echo "... processor/s.s"
 	@echo "... utils.o"
 	@echo "... utils.i"
 	@echo "... utils.s"
