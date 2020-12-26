@@ -1,9 +1,16 @@
-//
-// Created by Dewitt Chanell on 12/25/20.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dechanel <ommmirage@gmail.com>             +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/10/28 14:57:10 by dechanel          #+#    #+#             */
+/*   Updated: 2020/10/28 15:06:52 by dechanel         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "processor.h"
-#include <stdlib.h>
 
 void	p_width_before(t_format f, int *printed_count, int len)
 {

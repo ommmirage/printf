@@ -1,11 +1,18 @@
-//
-// Created by mirage on 20.12.2020.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dechanel <ommmirage@gmail.com>             +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/10/28 14:57:10 by dechanel          #+#    #+#             */
+/*   Updated: 2020/10/28 15:06:52 by dechanel         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "../printf.h"
 #include <stdlib.h>
 #include <stdarg.h>
-#include <unistd.h>
 
 int 	read_width(const char **line, va_list *arg_ptr)
 {
@@ -23,7 +30,7 @@ int 	read_width(const char **line, va_list *arg_ptr)
 	return (res);
 }
 
-int 	read_precision(const char **line, t_format *f, va_list *arg_ptr)
+int 	read_precision(const char **line, va_list *arg_ptr)
 {
 	char	*str;
 	int 	res;
@@ -31,7 +38,6 @@ int 	read_precision(const char **line, t_format *f, va_list *arg_ptr)
 	if (**line != '.')
 		return (-1);
 	(*line)++;
-	f->flags = f->flags & (~FLAG_ZERO);
 	if (**line == '*')
 	{
 		(*line)++;
@@ -64,7 +70,9 @@ int 	get_format(t_format *f, const char **line, va_list *arg_ptr)
 		(*f).flags = FLAG_MINUS;
 		(*f).width *= -1;
 	}
-	(*f).precision = read_precision(line, f, arg_ptr);
+	(*f).precision = read_precision(line, arg_ptr);
+	if (f->precision >= 0)
+		f->flags = f->flags & (~FLAG_ZERO);
 	if (f->precision < -1)
 		f->precision = -1;
 	(*f).type = read_type(line);

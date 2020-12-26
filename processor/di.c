@@ -1,6 +1,14 @@
-//
-// Created by Dewitt Chanell on 12/24/20.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dechanel <ommmirage@gmail.com>             +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/10/28 14:57:10 by dechanel          #+#    #+#             */
+/*   Updated: 2020/10/28 15:06:52 by dechanel         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "processor.h"
 
@@ -21,8 +29,9 @@ void		width_spaces_before(t_format f, int *printed_count, int len)
 
 void		width_zeroes_before(t_format f, int *printed_count, int len)
 {
-	if (f.flags & FLAG_ZERO)
-		while ((f.width > f.precision) && (f.width > len))
+	if ((f.flags & FLAG_ZERO) && !(f.flags & FLAG_MINUS))
+		while (((f.precision != -1) && (f.width > f.precision)) ||
+				(f.width > len))
 		{
 			write(1, "0", 1);
 			f.width--;
