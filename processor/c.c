@@ -33,7 +33,7 @@ static void	c_width_before(t_format f, int *printed_count)
 
 static void	print_char(int int_char, int *printed_count)
 {
-	char 	c;
+	char	c;
 
 	c = (char)int_char;
 	write(1, &c, 1);
@@ -42,7 +42,7 @@ static void	print_char(int int_char, int *printed_count)
 
 int			c(t_format f, int int_char)
 {
-	int 	printed_count;
+	int		printed_count;
 
 	printed_count = 0;
 	c_width_before(f, &printed_count);

@@ -99,10 +99,10 @@
 		<Unit filename="/Users/dechanel/printf/printf.h">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/dechanel/printf/processor/XX.c">
+		<Unit filename="/Users/dechanel/printf/processor/c.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/dechanel/printf/processor/c.c">
+		<Unit filename="/Users/dechanel/printf/processor/capital_x.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/dechanel/printf/processor/di.c">

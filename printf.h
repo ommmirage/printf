@@ -24,20 +24,20 @@
 # include "libft/libft.h"
 
 typedef struct	s_format{
-	int 	flags;
+	int		flags;
 	int		width;
-	int 	precision;
+	int		precision;
 	char	type;
-	int 	minus;
+	int		minus;
 }				t_format;
 
-int		ft_printf(const char *line, ...);
-int 	char_in_str(char c, const char *str);
-int		read_flags(const char **line);
-int 	get_format(t_format *f, const char **line, va_list *arg_ptr);
-char	*get_int_str(const char **line);
-void	process(t_format f, int *len, va_list *arg_ptr);
-void	check_double_percent(const char **line, int *len);
-int		int_len(int num);
+int				ft_printf(const char *line, ...);
+int				char_in_str(char c, const char *str);
+int				read_flags(const char **line);
+int				get_format(t_format *f, const char **line, va_list *arg_ptr);
+char			*get_int_str(const char **line);
+void			process(t_format f, int *len, va_list *arg_ptr);
+void			check_double_percent(const char **line, int *len);
+int				int_len(int num);
 
 #endif

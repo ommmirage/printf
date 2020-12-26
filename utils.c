@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include "printf.h"
 
-int char_in_str(char c, const char *str)
+int		char_in_str(char c, const char *str)
 {
 	while (*str)
 	{
@@ -26,7 +26,7 @@ int char_in_str(char c, const char *str)
 
 char	*get_int_str(const char **line)
 {
-	int 	i;
+	int		i;
 	char	*str;
 
 	str = malloc(12);

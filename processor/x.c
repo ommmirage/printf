@@ -23,7 +23,7 @@ static void	x_print_str(const char *str, int str_len, int precision,
 }
 
 static void	x_width_spaces_before(t_format f, int *printed_count, int len,
-								  unsigned int num)
+									unsigned int num)
 {
 	if (!(f.flags & FLAG_ZERO) && !(f.flags & FLAG_MINUS))
 	{
@@ -41,8 +41,8 @@ static void	x_width_spaces_before(t_format f, int *printed_count, int len,
 int			x(t_format f, unsigned int num)
 {
 	char	*str;
-	int 	str_len;
-	int 	printed_count;
+	int		str_len;
+	int		printed_count;
 
 	printed_count = 0;
 	str = long_to_hex(num);

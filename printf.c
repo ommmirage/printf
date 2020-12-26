@@ -39,8 +39,8 @@ void	check_double_percent(const char **line, int *len)
 
 int		ft_printf(const char *line, ...)
 {
-	va_list 	arg_ptr;
-	int 		len;
+	va_list		arg_ptr;
+	int			len;
 	t_format	f;
 
 	va_start(arg_ptr, line);
@@ -48,7 +48,7 @@ int		ft_printf(const char *line, ...)
 	while (*line)
 	{
 		write_before_percent(&line, &len);
-		ft_bzero(&f, sizeof (f));
+		ft_bzero(&f, sizeof(f));
 		if (!get_format(&f, &line, &arg_ptr))
 		{
 			va_end(arg_ptr);

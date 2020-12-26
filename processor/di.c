@@ -39,7 +39,7 @@ void		width_zeroes_before(t_format f, int *printed_count, int len)
 		}
 }
 
-static int min_max(int num)
+static int	min_max(int num)
 {
 	if (num == -2147483648)
 	{

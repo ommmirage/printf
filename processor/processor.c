@@ -30,7 +30,7 @@ void	process(t_format f, int *len, va_list *arg_ptr)
 	else if (f.type == 'x')
 		(*len) += x(f, va_arg(*arg_ptr, unsigned int));
 	else if (f.type == 'X')
-		(*len) += XX(f, va_arg(*arg_ptr, unsigned int));
+		(*len) += capital_x(f, va_arg(*arg_ptr, unsigned int));
 	else
 		return ;
 }

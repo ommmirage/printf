@@ -305,33 +305,6 @@ printf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/printf.c.s
 .PHONY : printf.c.s
 
-processor/XX.o: processor/XX.c.o
-
-.PHONY : processor/XX.o
-
-# target to build an object file
-processor/XX.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/XX.c.o
-.PHONY : processor/XX.c.o
-
-processor/XX.i: processor/XX.c.i
-
-.PHONY : processor/XX.i
-
-# target to preprocess a source file
-processor/XX.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/XX.c.i
-.PHONY : processor/XX.c.i
-
-processor/XX.s: processor/XX.c.s
-
-.PHONY : processor/XX.s
-
-# target to generate assembly for a file
-processor/XX.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/XX.c.s
-.PHONY : processor/XX.c.s
-
 processor/c.o: processor/c.c.o
 
 .PHONY : processor/c.o
@@ -358,6 +331,33 @@ processor/c.s: processor/c.c.s
 processor/c.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/c.c.s
 .PHONY : processor/c.c.s
+
+processor/capital_x.o: processor/capital_x.c.o
+
+.PHONY : processor/capital_x.o
+
+# target to build an object file
+processor/capital_x.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/capital_x.c.o
+.PHONY : processor/capital_x.c.o
+
+processor/capital_x.i: processor/capital_x.c.i
+
+.PHONY : processor/capital_x.i
+
+# target to preprocess a source file
+processor/capital_x.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/capital_x.c.i
+.PHONY : processor/capital_x.c.i
+
+processor/capital_x.s: processor/capital_x.c.s
+
+.PHONY : processor/capital_x.s
+
+# target to generate assembly for a file
+processor/capital_x.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/processor/capital_x.c.s
+.PHONY : processor/capital_x.c.s
 
 processor/di.o: processor/di.c.o
 
@@ -602,12 +602,12 @@ help:
 	@echo "... printf.o"
 	@echo "... printf.i"
 	@echo "... printf.s"
-	@echo "... processor/XX.o"
-	@echo "... processor/XX.i"
-	@echo "... processor/XX.s"
 	@echo "... processor/c.o"
 	@echo "... processor/c.i"
 	@echo "... processor/c.s"
+	@echo "... processor/capital_x.o"
+	@echo "... processor/capital_x.i"
+	@echo "... processor/capital_x.s"
 	@echo "... processor/di.o"
 	@echo "... processor/di.i"
 	@echo "... processor/di.s"

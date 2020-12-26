@@ -32,7 +32,7 @@ void	p_width_before(t_format f, int *printed_count, int len)
 }
 
 void	p_print_str(const char *str, int str_len, t_format f,
-				 int *printed_count)
+					int *printed_count)
 {
 	write(1, "0x", 2);
 	str += 2;
@@ -45,7 +45,7 @@ void	p_print_str(const char *str, int str_len, t_format f,
 
 int		p(t_format f, long p)
 {
-	int 	printed;
+	int		printed;
 	char	*str;
 	int		str_len;
 

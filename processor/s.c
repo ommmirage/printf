@@ -24,7 +24,8 @@ void		width_before(t_format f, int *printed_count, int len)
 	{
 		if (f.minus)
 			f.width--;
-		while (((f.precision != -1) && (f.width > f.precision)) || (f.width > len))
+		while (((f.precision != -1) && (f.width > f.precision)) ||
+				(f.width > len))
 		{
 			write(1, &space_or_zero, 1);
 			f.width--;
@@ -55,8 +56,8 @@ void		print_str(t_format f, const char *str, int str_len,
 
 int			s(t_format f, const char *str)
 {
-	int 	printed_count;
-	int 	str_len;
+	int	printed_count;
+	int	str_len;
 
 	printed_count = 0;
 	if (str)

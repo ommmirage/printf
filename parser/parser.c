@@ -14,10 +14,10 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
-int 	read_width(const char **line, va_list *arg_ptr)
+int		read_width(const char **line, va_list *arg_ptr)
 {
 	char	*str;
-	int 	res;
+	int		res;
 
 	if (**line == '*')
 	{
@@ -30,10 +30,10 @@ int 	read_width(const char **line, va_list *arg_ptr)
 	return (res);
 }
 
-int 	read_precision(const char **line, va_list *arg_ptr)
+int		read_precision(const char **line, va_list *arg_ptr)
 {
 	char	*str;
-	int 	res;
+	int		res;
 
 	if (**line != '.')
 		return (-1);
@@ -49,7 +49,7 @@ int 	read_precision(const char **line, va_list *arg_ptr)
 	return (res);
 }
 
-char 	read_type(const char **line)
+char	read_type(const char **line)
 {
 	char	type;
 
@@ -58,7 +58,7 @@ char 	read_type(const char **line)
 	return (type);
 }
 
-int 	get_format(t_format *f, const char **line, va_list *arg_ptr)
+int		get_format(t_format *f, const char **line, va_list *arg_ptr)
 {
 	if (**line != '%')
 		return (0);
